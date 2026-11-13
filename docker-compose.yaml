@@ -228,8 +228,8 @@ services:
         condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
-      sqlserver-init:
-        condition: service_completed_successfully
+      sqlserver:
+        condition: service_healthy
       mailpit:
         condition: service_started
 
