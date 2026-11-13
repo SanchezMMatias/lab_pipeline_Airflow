@@ -1,0 +1,4 @@
+cliente_id|nombre|email|fecha_alta|pais_codigo|activo
+181|Cliente Prueba 181|cliente181@ejemplo.com|2025-03-10|AR|1
+182|Cliente Prueba 182|sin-arroba.com|2025-03-10|AR|1
+183|Cliente Prueba 183|cliente183@ejemplo.com|2025-03-10|AR|1

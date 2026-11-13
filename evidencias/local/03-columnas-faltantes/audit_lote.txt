@@ -1,0 +1,23 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = '03-columnas-faltantes__20261113T194933'
+--------------------------------------------------------------------------------
+          audit_id: 9
+           archivo: lab_ventas_20261112.dat
+            estado: RECHAZADO
+           lote_id: lab.ventas-20261112-a72620d9fd7d
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 19:49:47.874000
+           fin_utc: 2026-11-13 19:49:50.584000
+            motivo: [estructura] estructura invalida (1 problemas); reg 2: tiene 6 columnas, se esperan 7
+
+-- lab.audit_error
+audit_id=9 registro=2 columna=None valor=None motivo=tiene 6 columnas, se esperan 7
+
+-- conteos en destino
+lab.clientes: 20 filas en 1 lotes
+lab.ventas: 100 filas en 1 lotes
+LOTES: lab.ventas-20261112-a72620d9fd7d

@@ -1,0 +1,4 @@
+cliente_id|nombre|email|fecha_alta|pais_codigo|activo
+101|Cliente Prueba 101|cliente101@ejemplo.com|2025-03-10|AR|1
+102|Cliente Prueba 102|cliente102@ejemplo.com|31/02/2026|AR|1
+103|Cliente Prueba 103|cliente103@ejemplo.com|2025-03-10|AR|1

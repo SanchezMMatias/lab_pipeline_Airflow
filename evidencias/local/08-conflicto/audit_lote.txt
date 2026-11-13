@@ -1,0 +1,34 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = '08-conflicto__20261113T194239'
+--------------------------------------------------------------------------------
+          audit_id: 5
+           archivo: lab_clientes_20261109.dat
+            estado: YA_PROCESADO
+           lote_id: lab.clientes-20261109-224d858ef70d
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 19:42:48.545000
+           fin_utc: 2026-11-13 19:42:48.545000
+            motivo: mismo archivo (nombre y sha256) ya procesado correctamente
+--------------------------------------------------------------------------------
+          audit_id: 6
+           archivo: lab_ventas_20261109.dat
+            estado: CONFLICTO
+           lote_id: lab.ventas-20261109-873286e2836d
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 19:42:48.976000
+           fin_utc: 2026-11-13 19:42:48.976000
+            motivo: mismo nombre que un archivo ya registrado pero con otro sha256: no se toca raw ni SQL
+
+-- conteos en destino
+lab.clientes: 20 filas en 1 lotes
+lab.ventas: 100 filas en 1 lotes
+LOTES: lab.clientes-20261109-224d858ef70d lab.ventas-20261109-873286e2836d

@@ -1,0 +1,1 @@
+"Subject":"[lab-airflow local] CON ERRORES - lab_archivos 2026-11-12 - RECHAZADO=1"

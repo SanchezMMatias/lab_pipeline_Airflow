@@ -1,0 +1,16 @@
+{
+  "archivo": "lab_ventas_20261117.dat",
+  "lote_id": "lab.ventas-20261117-49ff52663229",
+  "etapa": "normalizacion",
+  "estado": "RECHAZADO",
+  "motivo": "1 errores de normalizacion",
+  "cantidad_errores": 1,
+  "errores": [
+    {
+      "registro": 2,
+      "columna": "moneda",
+      "valor": "USD",
+      "motivo": "valor no permitido (permitidos: ARS)"
+    }
+  ]
+}

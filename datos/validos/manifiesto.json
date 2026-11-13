@@ -1,0 +1,2562 @@
+{
+  "fecha_negocio": "2026-11-09",
+  "semilla": 20261109,
+  "archivos": {
+    "lab_clientes_20261109.dat": {
+      "registros": 20,
+      "sha256_original": "224d858ef70dc4b82bb8638acb5a1c96e2ed53e6b01d883160384df72bfe1a94",
+      "sha256_esperado": "d7994d38068804d82629be5dee30bf22f619b7d83cce7b675c80ee5195644b5c"
+    },
+    "lab_ventas_20261109.dat": {
+      "registros": 100,
+      "sha256_original": "176baf9f706206b8d7926bf3933acd3585bee0d5931726ff182dece83d53a8fe",
+      "sha256_esperado": "b6f619eadee7a5d31888da5eebd9084f6c30ff2f29cebeb02cecca7c4b41619d",
+      "suma_cantidad": "633",
+      "suma_importe_total": "1207807.85",
+      "clientes_referenciados": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    }
+  },
+  "total_anomalias": 315,
+  "anomalias": [
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 1,
+      "columna": "nombre",
+      "original": "  José Pérez ",
+      "normalizado": "José Pérez",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 1,
+      "columna": "email",
+      "original": "JOSE.PEREZ@EJEMPLO.COM.AR",
+      "normalizado": "jose.perez@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 1,
+      "columna": "pais_codigo",
+      "original": "ar",
+      "normalizado": "AR",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 1,
+      "columna": "activo",
+      "original": "sí",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 2,
+      "columna": "email",
+      "original": " maria.gomez@ejemplo.com.ar",
+      "normalizado": "maria.gomez@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 2,
+      "columna": "fecha_alta",
+      "original": "19/07/2021",
+      "normalizado": "2021-07-19",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 2,
+      "columna": "activo",
+      "original": "SÍ",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 3,
+      "columna": "fecha_alta",
+      "original": "03-02-2020",
+      "normalizado": "2020-02-03",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 3,
+      "columna": "pais_codigo",
+      "original": "cl",
+      "normalizado": "CL",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 4,
+      "columna": "email",
+      "original": "MARTIN.RODRIGUEZ@EJEMPLO.COM.AR",
+      "normalizado": "martin.rodriguez@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 5,
+      "columna": "nombre",
+      "original": "  Sofía López ",
+      "normalizado": "Sofía López",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 5,
+      "columna": "fecha_alta",
+      "original": "22/10/2021",
+      "normalizado": "2021-10-22",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 5,
+      "columna": "pais_codigo",
+      "original": "cl",
+      "normalizado": "CL",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 5,
+      "columna": "activo",
+      "original": "Si",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 6,
+      "columna": "cliente_id",
+      "original": " 6",
+      "normalizado": "6",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 6,
+      "columna": "fecha_alta",
+      "original": "24-05-2023",
+      "normalizado": "2023-05-24",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 6,
+      "columna": "activo",
+      "original": "sí",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 7,
+      "columna": "email",
+      "original": "VALENTINA.DIAZ@EJEMPLO.COM.AR",
+      "normalizado": "valentina.diaz@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 7,
+      "columna": "pais_codigo",
+      "original": "ar",
+      "normalizado": "AR",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 7,
+      "columna": "activo",
+      "original": "SÍ",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 8,
+      "columna": "fecha_alta",
+      "original": "13/09/2024",
+      "normalizado": "2024-09-13",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 8,
+      "columna": "activo",
+      "original": "NO",
+      "normalizado": "0",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 8,
+      "columna": "nombre",
+      "original": "\"Tomás \"\"Tomi\"\" Álvarez\"",
+      "normalizado": "Tomás \"Tomi\" Álvarez",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 9,
+      "columna": "nombre",
+      "original": "  Camila Romero ",
+      "normalizado": "Camila Romero",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 9,
+      "columna": "fecha_alta",
+      "original": "21-12-2020",
+      "normalizado": "2020-12-21",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 9,
+      "columna": "pais_codigo",
+      "original": "ar",
+      "normalizado": "AR",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 10,
+      "columna": "email",
+      "original": "MATEO.SANCHEZ@EJEMPLO.COM.AR",
+      "normalizado": "mateo.sanchez@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 10,
+      "columna": "activo",
+      "original": "Si",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 11,
+      "columna": "fecha_alta",
+      "original": "03/02/2025",
+      "normalizado": "2025-02-03",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 11,
+      "columna": "pais_codigo",
+      "original": "ar",
+      "normalizado": "AR",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 11,
+      "columna": "activo",
+      "original": "sí",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 12,
+      "columna": "cliente_id",
+      "original": " 12",
+      "normalizado": "12",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 12,
+      "columna": "email",
+      "original": " benjamin.ruiz@ejemplo.com.ar",
+      "normalizado": "benjamin.ruiz@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 12,
+      "columna": "fecha_alta",
+      "original": "31-12-2023",
+      "normalizado": "2023-12-31",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 12,
+      "columna": "activo",
+      "original": "SÍ",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 13,
+      "columna": "nombre",
+      "original": "  Florencia Castro ",
+      "normalizado": "Florencia Castro",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 13,
+      "columna": "email",
+      "original": "FLORENCIA.CASTRO@EJEMPLO.COM.AR",
+      "normalizado": "florencia.castro@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 13,
+      "columna": "pais_codigo",
+      "original": "cl",
+      "normalizado": "CL",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 13,
+      "columna": "activo",
+      "original": "true",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 14,
+      "columna": "fecha_alta",
+      "original": "09/02/2022",
+      "normalizado": "2022-02-09",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 14,
+      "columna": "activo",
+      "original": "false",
+      "normalizado": "0",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 15,
+      "columna": "fecha_alta",
+      "original": "23-11-2020",
+      "normalizado": "2020-11-23",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 15,
+      "columna": "pais_codigo",
+      "original": "ar",
+      "normalizado": "AR",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 15,
+      "columna": "activo",
+      "original": "Si",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 16,
+      "columna": "email",
+      "original": "FACUNDO.MOLINA@EJEMPLO.COM.AR",
+      "normalizado": "facundo.molina@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 16,
+      "columna": "activo",
+      "original": "sí",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 17,
+      "columna": "nombre",
+      "original": "  Martina Suárez ",
+      "normalizado": "Martina Suárez",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 17,
+      "columna": "email",
+      "original": " martina.suarez@ejemplo.com.ar",
+      "normalizado": "martina.suarez@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 17,
+      "columna": "fecha_alta",
+      "original": "30/09/2022",
+      "normalizado": "2022-09-30",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 17,
+      "columna": "pais_codigo",
+      "original": "cl",
+      "normalizado": "CL",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 17,
+      "columna": "activo",
+      "original": "no",
+      "normalizado": "0",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 18,
+      "columna": "cliente_id",
+      "original": " 18",
+      "normalizado": "18",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 18,
+      "columna": "fecha_alta",
+      "original": "12-09-2021",
+      "normalizado": "2021-09-12",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 18,
+      "columna": "activo",
+      "original": "true",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 19,
+      "columna": "email",
+      "original": "PAULA.HERRERA@EJEMPLO.COM.AR",
+      "normalizado": "paula.herrera@ejemplo.com.ar",
+      "anomalia": "email en mayusculas/espacios"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 19,
+      "columna": "pais_codigo",
+      "original": "uy",
+      "normalizado": "UY",
+      "anomalia": "pais en minusculas"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 20,
+      "columna": "fecha_alta",
+      "original": "06/07/2025",
+      "normalizado": "2025-07-06",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_clientes_20261109.dat",
+      "registro": 20,
+      "columna": "activo",
+      "original": "Si",
+      "normalizado": "1",
+      "anomalia": "booleano textual"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 1,
+      "columna": "importe_total",
+      "original": "45,34",
+      "normalizado": "45.34",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 2,
+      "columna": "fecha_venta",
+      "original": "04/11/2026",
+      "normalizado": "2026-11-04",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 2,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 3,
+      "columna": "cliente_id",
+      "original": "3 ",
+      "normalizado": "3",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 3,
+      "columna": "fecha_venta",
+      "original": "07-11-2026",
+      "normalizado": "2026-11-07",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 3,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 3,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 4,
+      "columna": "cantidad",
+      "original": " 6 ",
+      "normalizado": "6",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 4,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 4,
+      "columna": "observacion",
+      "original": "null",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 5,
+      "columna": "fecha_venta",
+      "original": "05/11/2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 5,
+      "columna": "importe_total",
+      "original": "21051,37",
+      "normalizado": "21051.37",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 6,
+      "columna": "fecha_venta",
+      "original": "03-11-2026",
+      "normalizado": "2026-11-03",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 6,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 6,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Pedido \"urgente\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 7,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 7,
+      "columna": "observacion",
+      "original": " Producto \"en oferta\"  ",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 7,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 8,
+      "columna": "fecha_venta",
+      "original": "08/11/2026",
+      "normalizado": "2026-11-08",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 8,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 9,
+      "columna": "fecha_venta",
+      "original": "07-11-2026",
+      "normalizado": "2026-11-07",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 9,
+      "columna": "importe_total",
+      "original": "20840,87",
+      "normalizado": "20840.87",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 10,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 10,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 11,
+      "columna": "fecha_venta",
+      "original": "09/11/2026",
+      "normalizado": "2026-11-09",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 11,
+      "columna": "cantidad",
+      "original": " 6 ",
+      "normalizado": "6",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 11,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 12,
+      "columna": "cliente_id",
+      "original": "19 ",
+      "normalizado": "19",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 12,
+      "columna": "fecha_venta",
+      "original": "03-11-2026",
+      "normalizado": "2026-11-03",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 12,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 12,
+      "columna": "observacion",
+      "original": "NULL",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 13,
+      "columna": "importe_total",
+      "original": "20930,23",
+      "normalizado": "20930.23",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 13,
+      "columna": "observacion",
+      "original": " Cliente pidió factura A  ",
+      "normalizado": "Cliente pidió factura A",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 14,
+      "columna": "fecha_venta",
+      "original": "09/11/2026",
+      "normalizado": "2026-11-09",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 14,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 15,
+      "columna": "fecha_venta",
+      "original": "07-11-2026",
+      "normalizado": "2026-11-07",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 15,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 15,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 16,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 17,
+      "columna": "fecha_venta",
+      "original": "05/11/2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 17,
+      "columna": "importe_total",
+      "original": "20216,11",
+      "normalizado": "20216.11",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 17,
+      "columna": "observacion",
+      "original": "NULL",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 18,
+      "columna": "fecha_venta",
+      "original": "04-11-2026",
+      "normalizado": "2026-11-04",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 18,
+      "columna": "cantidad",
+      "original": " 1 ",
+      "normalizado": "1",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 18,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 19,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 19,
+      "columna": "observacion",
+      "original": "null",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 20,
+      "columna": "fecha_venta",
+      "original": "04/11/2026",
+      "normalizado": "2026-11-04",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 20,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 20,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 21,
+      "columna": "cliente_id",
+      "original": "14 ",
+      "normalizado": "14",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 21,
+      "columna": "fecha_venta",
+      "original": "05-11-2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 21,
+      "columna": "importe_total",
+      "original": "496,25",
+      "normalizado": "496.25",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 22,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 22,
+      "columna": "observacion",
+      "original": " Producto \"en oferta\"  ",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 22,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 23,
+      "columna": "fecha_venta",
+      "original": "02/11/2026",
+      "normalizado": "2026-11-02",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 23,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 23,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 24,
+      "columna": "fecha_venta",
+      "original": "06-11-2026",
+      "normalizado": "2026-11-06",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 24,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 24,
+      "columna": "observacion",
+      "original": "null",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 25,
+      "columna": "cantidad",
+      "original": " 3 ",
+      "normalizado": "3",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 25,
+      "columna": "importe_total",
+      "original": "620,96",
+      "normalizado": "620.96",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 25,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 26,
+      "columna": "fecha_venta",
+      "original": "03/11/2026",
+      "normalizado": "2026-11-03",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 26,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 27,
+      "columna": "fecha_venta",
+      "original": "04-11-2026",
+      "normalizado": "2026-11-04",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 27,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 28,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 28,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 29,
+      "columna": "fecha_venta",
+      "original": "07/11/2026",
+      "normalizado": "2026-11-07",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 29,
+      "columna": "importe_total",
+      "original": "20214,48",
+      "normalizado": "20214.48",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 29,
+      "columna": "observacion",
+      "original": "null",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 30,
+      "columna": "cliente_id",
+      "original": "1 ",
+      "normalizado": "1",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 30,
+      "columna": "fecha_venta",
+      "original": "05-11-2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 30,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 30,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 31,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 32,
+      "columna": "fecha_venta",
+      "original": "03/11/2026",
+      "normalizado": "2026-11-03",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 32,
+      "columna": "cantidad",
+      "original": " 8 ",
+      "normalizado": "8",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 32,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 33,
+      "columna": "fecha_venta",
+      "original": "04-11-2026",
+      "normalizado": "2026-11-04",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 33,
+      "columna": "importe_total",
+      "original": "24099,11",
+      "normalizado": "24099.11",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 33,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 34,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 34,
+      "columna": "observacion",
+      "original": " Envío a domicilio  ",
+      "normalizado": "Envío a domicilio",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 35,
+      "columna": "fecha_venta",
+      "original": "07/11/2026",
+      "normalizado": "2026-11-07",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 35,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 36,
+      "columna": "fecha_venta",
+      "original": "05-11-2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 36,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 37,
+      "columna": "importe_total",
+      "original": "7762,54",
+      "normalizado": "7762.54",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 37,
+      "columna": "observacion",
+      "original": " Pedido \"urgente\"  ",
+      "normalizado": "Pedido \"urgente\"",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 37,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Pedido \"urgente\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 38,
+      "columna": "fecha_venta",
+      "original": "01/11/2026",
+      "normalizado": "2026-11-01",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 38,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 38,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 39,
+      "columna": "cliente_id",
+      "original": "7 ",
+      "normalizado": "7",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 39,
+      "columna": "fecha_venta",
+      "original": "06-11-2026",
+      "normalizado": "2026-11-06",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 39,
+      "columna": "cantidad",
+      "original": " 3 ",
+      "normalizado": "3",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 39,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 39,
+      "columna": "observacion",
+      "original": "null",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 40,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 40,
+      "columna": "observacion",
+      "original": " Cliente pidió factura A  ",
+      "normalizado": "Cliente pidió factura A",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 41,
+      "columna": "fecha_venta",
+      "original": "09/11/2026",
+      "normalizado": "2026-11-09",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 41,
+      "columna": "importe_total",
+      "original": "1675,38",
+      "normalizado": "1675.38",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 42,
+      "columna": "fecha_venta",
+      "original": "06-11-2026",
+      "normalizado": "2026-11-06",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 42,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 42,
+      "columna": "observacion",
+      "original": "NULL",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 43,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 43,
+      "columna": "observacion",
+      "original": " Pago con transferencia  ",
+      "normalizado": "Pago con transferencia",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 44,
+      "columna": "fecha_venta",
+      "original": "06/11/2026",
+      "normalizado": "2026-11-06",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 44,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 45,
+      "columna": "fecha_venta",
+      "original": "04-11-2026",
+      "normalizado": "2026-11-04",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 45,
+      "columna": "importe_total",
+      "original": "9143,98",
+      "normalizado": "9143.98",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 45,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 46,
+      "columna": "cantidad",
+      "original": " 11 ",
+      "normalizado": "11",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 46,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 47,
+      "columna": "fecha_venta",
+      "original": "06/11/2026",
+      "normalizado": "2026-11-06",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 47,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 48,
+      "columna": "cliente_id",
+      "original": "8 ",
+      "normalizado": "8",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 48,
+      "columna": "fecha_venta",
+      "original": "01-11-2026",
+      "normalizado": "2026-11-01",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 48,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 49,
+      "columna": "importe_total",
+      "original": "13066,53",
+      "normalizado": "13066.53",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 49,
+      "columna": "observacion",
+      "original": " Pago con transferencia  ",
+      "normalizado": "Pago con transferencia",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 50,
+      "columna": "fecha_venta",
+      "original": "09/11/2026",
+      "normalizado": "2026-11-09",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 50,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 50,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 51,
+      "columna": "fecha_venta",
+      "original": "08-11-2026",
+      "normalizado": "2026-11-08",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 51,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 52,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 52,
+      "columna": "observacion",
+      "original": " Producto \"en oferta\"  ",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 52,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 53,
+      "columna": "fecha_venta",
+      "original": "08/11/2026",
+      "normalizado": "2026-11-08",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 53,
+      "columna": "cantidad",
+      "original": " 7 ",
+      "normalizado": "7",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 53,
+      "columna": "importe_total",
+      "original": "22708,88",
+      "normalizado": "22708.88",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 53,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 54,
+      "columna": "fecha_venta",
+      "original": "01-11-2026",
+      "normalizado": "2026-11-01",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 54,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 55,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 55,
+      "columna": "observacion",
+      "original": " Entrega en sucursal  ",
+      "normalizado": "Entrega en sucursal",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 56,
+      "columna": "fecha_venta",
+      "original": "03/11/2026",
+      "normalizado": "2026-11-03",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 56,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 57,
+      "columna": "cliente_id",
+      "original": "16 ",
+      "normalizado": "16",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 57,
+      "columna": "fecha_venta",
+      "original": "06-11-2026",
+      "normalizado": "2026-11-06",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 57,
+      "columna": "importe_total",
+      "original": "9984,45",
+      "normalizado": "9984.45",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 57,
+      "columna": "observacion",
+      "original": "NULL",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 58,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 58,
+      "columna": "observacion",
+      "original": " Pedido \"urgente\"  ",
+      "normalizado": "Pedido \"urgente\"",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 58,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Pedido \"urgente\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 59,
+      "columna": "fecha_venta",
+      "original": "07/11/2026",
+      "normalizado": "2026-11-07",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 59,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 60,
+      "columna": "fecha_venta",
+      "original": "05-11-2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 60,
+      "columna": "cantidad",
+      "original": " 2 ",
+      "normalizado": "2",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 60,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 60,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 61,
+      "columna": "importe_total",
+      "original": "4046,23",
+      "normalizado": "4046.23",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 61,
+      "columna": "observacion",
+      "original": " Envío a domicilio  ",
+      "normalizado": "Envío a domicilio",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 62,
+      "columna": "fecha_venta",
+      "original": "03/11/2026",
+      "normalizado": "2026-11-03",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 62,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 62,
+      "columna": "observacion",
+      "original": "NULL",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 63,
+      "columna": "fecha_venta",
+      "original": "02-11-2026",
+      "normalizado": "2026-11-02",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 63,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 63,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 64,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 64,
+      "columna": "observacion",
+      "original": " Entrega en sucursal  ",
+      "normalizado": "Entrega en sucursal",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 65,
+      "columna": "fecha_venta",
+      "original": "09/11/2026",
+      "normalizado": "2026-11-09",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 65,
+      "columna": "importe_total",
+      "original": "9653,30",
+      "normalizado": "9653.30",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 66,
+      "columna": "cliente_id",
+      "original": "13 ",
+      "normalizado": "13",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 66,
+      "columna": "fecha_venta",
+      "original": "09-11-2026",
+      "normalizado": "2026-11-09",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 66,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 67,
+      "columna": "cantidad",
+      "original": " 4 ",
+      "normalizado": "4",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 67,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 67,
+      "columna": "observacion",
+      "original": "NULL",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 68,
+      "columna": "fecha_venta",
+      "original": "02/11/2026",
+      "normalizado": "2026-11-02",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 68,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 68,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 69,
+      "columna": "fecha_venta",
+      "original": "08-11-2026",
+      "normalizado": "2026-11-08",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 69,
+      "columna": "importe_total",
+      "original": "745,96",
+      "normalizado": "745.96",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 70,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 70,
+      "columna": "observacion",
+      "original": " Retira el sábado  ",
+      "normalizado": "Retira el sábado",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 71,
+      "columna": "fecha_venta",
+      "original": "02/11/2026",
+      "normalizado": "2026-11-02",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 71,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 72,
+      "columna": "fecha_venta",
+      "original": "09-11-2026",
+      "normalizado": "2026-11-09",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 72,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 73,
+      "columna": "importe_total",
+      "original": "12667,59",
+      "normalizado": "12667.59",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 73,
+      "columna": "observacion",
+      "original": " Cliente pidió factura A  ",
+      "normalizado": "Cliente pidió factura A",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 74,
+      "columna": "fecha_venta",
+      "original": "05/11/2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 74,
+      "columna": "cantidad",
+      "original": " 11 ",
+      "normalizado": "11",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 74,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 74,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 75,
+      "columna": "cliente_id",
+      "original": "2 ",
+      "normalizado": "2",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 75,
+      "columna": "fecha_venta",
+      "original": "09-11-2026",
+      "normalizado": "2026-11-09",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 75,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 76,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 76,
+      "columna": "observacion",
+      "original": " Producto \"en oferta\"  ",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 76,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 77,
+      "columna": "fecha_venta",
+      "original": "06/11/2026",
+      "normalizado": "2026-11-06",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 77,
+      "columna": "importe_total",
+      "original": "22121,24",
+      "normalizado": "22121.24",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 78,
+      "columna": "fecha_venta",
+      "original": "07-11-2026",
+      "normalizado": "2026-11-07",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 78,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 79,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 79,
+      "columna": "observacion",
+      "original": "null",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 80,
+      "columna": "fecha_venta",
+      "original": "02/11/2026",
+      "normalizado": "2026-11-02",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 80,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 81,
+      "columna": "fecha_venta",
+      "original": "06-11-2026",
+      "normalizado": "2026-11-06",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 81,
+      "columna": "cantidad",
+      "original": " 2 ",
+      "normalizado": "2",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 81,
+      "columna": "importe_total",
+      "original": "19855,66",
+      "normalizado": "19855.66",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 82,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 82,
+      "columna": "observacion",
+      "original": " Producto \"en oferta\"  ",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 82,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 83,
+      "columna": "fecha_venta",
+      "original": "08/11/2026",
+      "normalizado": "2026-11-08",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 83,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 84,
+      "columna": "cliente_id",
+      "original": "9 ",
+      "normalizado": "9",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 84,
+      "columna": "fecha_venta",
+      "original": "05-11-2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 84,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 85,
+      "columna": "importe_total",
+      "original": "332,05",
+      "normalizado": "332.05",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 85,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 86,
+      "columna": "fecha_venta",
+      "original": "01/11/2026",
+      "normalizado": "2026-11-01",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 86,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 87,
+      "columna": "fecha_venta",
+      "original": "04-11-2026",
+      "normalizado": "2026-11-04",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 87,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 88,
+      "columna": "cantidad",
+      "original": " 4 ",
+      "normalizado": "4",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 88,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 88,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 89,
+      "columna": "fecha_venta",
+      "original": "06/11/2026",
+      "normalizado": "2026-11-06",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 89,
+      "columna": "importe_total",
+      "original": "20830,12",
+      "normalizado": "20830.12",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 90,
+      "columna": "fecha_venta",
+      "original": "01-11-2026",
+      "normalizado": "2026-11-01",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 90,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 90,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 91,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 91,
+      "columna": "observacion",
+      "original": " Pago con transferencia  ",
+      "normalizado": "Pago con transferencia",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 92,
+      "columna": "fecha_venta",
+      "original": "04/11/2026",
+      "normalizado": "2026-11-04",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 92,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 93,
+      "columna": "cliente_id",
+      "original": "9 ",
+      "normalizado": "9",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 93,
+      "columna": "fecha_venta",
+      "original": "05-11-2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 93,
+      "columna": "importe_total",
+      "original": "24352,90",
+      "normalizado": "24352.90",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 93,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 94,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 94,
+      "columna": "observacion",
+      "original": "null",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 95,
+      "columna": "fecha_venta",
+      "original": "02/11/2026",
+      "normalizado": "2026-11-02",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 95,
+      "columna": "cantidad",
+      "original": " 1 ",
+      "normalizado": "1",
+      "anomalia": "espacios externos"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 95,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 95,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 96,
+      "columna": "fecha_venta",
+      "original": "03-11-2026",
+      "normalizado": "2026-11-03",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 96,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 96,
+      "columna": "observacion",
+      "original": "(entre comillas, internas duplicadas)",
+      "normalizado": "Producto \"en oferta\"",
+      "anomalia": "comillas internas duplicadas"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 97,
+      "columna": "importe_total",
+      "original": "1107,15",
+      "normalizado": "1107.15",
+      "anomalia": "coma decimal"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 97,
+      "columna": "observacion",
+      "original": "NULL",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 98,
+      "columna": "fecha_venta",
+      "original": "05/11/2026",
+      "normalizado": "2026-11-05",
+      "anomalia": "fecha DD/MM/YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 98,
+      "columna": "moneda",
+      "original": "ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 98,
+      "columna": "observacion",
+      "original": "N/A",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 99,
+      "columna": "fecha_venta",
+      "original": "04-11-2026",
+      "normalizado": "2026-11-04",
+      "anomalia": "fecha DD-MM-YYYY"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 99,
+      "columna": "moneda",
+      "original": " ARS ",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 99,
+      "columna": "observacion",
+      "original": "null",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 100,
+      "columna": "moneda",
+      "original": "Ars",
+      "normalizado": "ARS",
+      "anomalia": "moneda en minusculas/espacios"
+    },
+    {
+      "archivo": "lab_ventas_20261109.dat",
+      "registro": 100,
+      "columna": "observacion",
+      "original": "  ",
+      "normalizado": "",
+      "anomalia": "nulo en opcional"
+    }
+  ]
+}

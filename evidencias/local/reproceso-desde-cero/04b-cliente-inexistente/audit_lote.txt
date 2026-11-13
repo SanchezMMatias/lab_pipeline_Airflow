@@ -1,0 +1,24 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = 'reproceso-desde-cero_04b-cliente-inexistente__20261113T202444'
+--------------------------------------------------------------------------------
+          audit_id: 39
+           archivo: lab_ventas_20261114.dat
+            estado: RECHAZADO
+           lote_id: lab.ventas-20261114-d8e3eac0cc75
+     registros_esp: 3
+     registros_obt: None
+ suma_cantidad_esp: 6
+ suma_cantidad_obt: None
+  suma_importe_esp: 4500.00
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 20:24:54.249000
+           fin_utc: 2026-11-13 20:25:02.177000
+            motivo: [referencias] referencias inexistentes (2 errores); archivo, cliente_id: 1 cliente_id inexistentes en lab.clientes (valor: '999'); reg 2, cliente_id: cliente_id inexistente en lab.clientes (valor: '999')
+
+-- lab.audit_error
+audit_id=39 registro=None columna=cliente_id valor='999' motivo=1 cliente_id inexistentes en lab.clientes
+audit_id=39 registro=2 columna=cliente_id valor='999' motivo=cliente_id inexistente en lab.clientes
+
+-- conteos en destino
+lab.clientes: 20 filas en 1 lotes
+lab.ventas: 100 filas en 1 lotes
+LOTES: lab.ventas-20261114-d8e3eac0cc75

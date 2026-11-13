@@ -1,0 +1,6 @@
+cliente_id|nombre|email|fecha_alta|pais_codigo|activo
+191|Cliente Prueba 191|cliente191@ejemplo.com|2025-03-10|CL|1
+192|Cliente Prueba 192|cliente192@ejemplo.com|2025-03-10|UY|1
+193|Cliente Prueba 193|cliente193@ejemplo.com|2025-03-10|AR|1
+194|Cliente Prueba 194|cliente194@ejemplo.com|2025-03-10|CL|1
+195|Cliente Prueba 195|cliente195@ejemplo.com|2025-03-10|UY|1

@@ -1,0 +1,23 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = 'reproceso-desde-cero_02a-fecha-imposible__20261113T202118'
+--------------------------------------------------------------------------------
+          audit_id: 35
+           archivo: lab_clientes_20261110.dat
+            estado: RECHAZADO
+           lote_id: lab.clientes-20261110-a43c61087ba0
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 20:21:23.906000
+           fin_utc: 2026-11-13 20:21:27.332000
+            motivo: [normalizacion] 1 errores de normalizacion; reg 2, fecha_alta: fecha inexistente (valor: '31/02/2026')
+
+-- lab.audit_error
+audit_id=35 registro=2 columna=fecha_alta valor='31/02/2026' motivo=fecha inexistente
+
+-- conteos en destino
+lab.clientes: 20 filas en 1 lotes
+lab.ventas: 100 filas en 1 lotes
+LOTES: lab.clientes-20261110-a43c61087ba0

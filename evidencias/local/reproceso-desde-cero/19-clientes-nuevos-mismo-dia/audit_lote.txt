@@ -1,0 +1,34 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = 'reproceso-desde-cero_19-clientes-nuevos-mismo-dia__20261113T202915'
+--------------------------------------------------------------------------------
+          audit_id: 45
+           archivo: lab_ventas_20261119.dat
+            estado: CORRECTO
+           lote_id: lab.ventas-20261119-477332945a2e
+     registros_esp: 30
+     registros_obt: 30
+ suma_cantidad_esp: 90
+ suma_cantidad_obt: 90
+  suma_importe_esp: 6259.65
+  suma_importe_obt: 6259.65
+        inicio_utc: 2026-11-13 20:29:28.074000
+           fin_utc: 2026-11-13 20:30:03.853000
+            motivo: None
+--------------------------------------------------------------------------------
+          audit_id: 46
+           archivo: lab_clientes_20261119.dat
+            estado: CORRECTO
+           lote_id: lab.clientes-20261119-492ccc59751b
+     registros_esp: 5
+     registros_obt: 5
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 20:29:28.170000
+           fin_utc: 2026-11-13 20:29:54.285000
+            motivo: None
+
+-- conteos en destino
+lab.clientes: 25 filas en 2 lotes
+lab.ventas: 130 filas en 2 lotes
+LOTES: lab.clientes-20261119-492ccc59751b lab.ventas-20261119-477332945a2e

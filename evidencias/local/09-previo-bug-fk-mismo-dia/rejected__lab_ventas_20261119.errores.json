@@ -1,0 +1,106 @@
+{
+  "archivo": "lab_ventas_20261119.dat",
+  "lote_id": "lab.ventas-20261119-477332945a2e",
+  "etapa": "staging",
+  "estado": "RECHAZADO",
+  "motivo": "validacion en staging fallida (16 errores)",
+  "cantidad_errores": 16,
+  "errores": [
+    {
+      "registro": null,
+      "columna": "cliente_id",
+      "valor": "191,192,193,194,195",
+      "motivo": "5 cliente_id inexistentes en lab.clientes"
+    },
+    {
+      "registro": 1,
+      "columna": "cliente_id",
+      "valor": "192",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 3,
+      "columna": "cliente_id",
+      "valor": "194",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 5,
+      "columna": "cliente_id",
+      "valor": "191",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 7,
+      "columna": "cliente_id",
+      "valor": "193",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 9,
+      "columna": "cliente_id",
+      "valor": "195",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 11,
+      "columna": "cliente_id",
+      "valor": "192",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 13,
+      "columna": "cliente_id",
+      "valor": "194",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 15,
+      "columna": "cliente_id",
+      "valor": "191",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 17,
+      "columna": "cliente_id",
+      "valor": "193",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 19,
+      "columna": "cliente_id",
+      "valor": "195",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 21,
+      "columna": "cliente_id",
+      "valor": "192",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 23,
+      "columna": "cliente_id",
+      "valor": "194",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 25,
+      "columna": "cliente_id",
+      "valor": "191",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 27,
+      "columna": "cliente_id",
+      "valor": "193",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    },
+    {
+      "registro": 29,
+      "columna": "cliente_id",
+      "valor": "195",
+      "motivo": "cliente_id inexistente en lab.clientes"
+    }
+  ]
+}

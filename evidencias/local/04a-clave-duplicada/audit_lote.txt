@@ -1,0 +1,23 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = '04a-clave-duplicada__20261113T195047'
+--------------------------------------------------------------------------------
+          audit_id: 10
+           archivo: lab_ventas_20261113.dat
+            estado: RECHAZADO
+           lote_id: lab.ventas-20261113-a72cfb764909
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 19:50:56.589000
+           fin_utc: 2026-11-13 19:51:01.203000
+            motivo: [normalizacion] 1 errores de normalizacion; reg 3, venta_id: clave duplicada (ya aparece en el registro 2) (valor: '1302')
+
+-- lab.audit_error
+audit_id=10 registro=3 columna=venta_id valor='1302' motivo=clave duplicada (ya aparece en el registro 2)
+
+-- conteos en destino
+lab.clientes: 20 filas en 1 lotes
+lab.ventas: 100 filas en 1 lotes
+LOTES: lab.ventas-20261113-a72cfb764909

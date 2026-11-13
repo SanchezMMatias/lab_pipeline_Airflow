@@ -1,0 +1,7 @@
+"event":"Worker startup parse complete
+"event":"::endgroup::
+"exc_type":"OperationalError
+"exc_value":"('HYT00', '[HYT00] [Microsoft][ODBC Driver 18 for SQL Server]Query timeout expired (0) (SQLExecDirectW)')
+"event":"::group::Post Execute
+"event":"::endgroup::
+8

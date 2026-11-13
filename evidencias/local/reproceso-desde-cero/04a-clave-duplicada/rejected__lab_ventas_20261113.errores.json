@@ -1,0 +1,16 @@
+{
+  "archivo": "lab_ventas_20261113.dat",
+  "lote_id": "lab.ventas-20261113-a72cfb764909",
+  "etapa": "normalizacion",
+  "estado": "RECHAZADO",
+  "motivo": "1 errores de normalizacion",
+  "cantidad_errores": 1,
+  "errores": [
+    {
+      "registro": 3,
+      "columna": "venta_id",
+      "valor": "1302",
+      "motivo": "clave duplicada (ya aparece en el registro 2)"
+    }
+  ]
+}

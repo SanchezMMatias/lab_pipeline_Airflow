@@ -1,0 +1,13 @@
+== lab_clientes_20261109.dat (normalizado esperado)
+  OK         registros                    20
+  OK         sha256_esperado              d7994d38068804d82629be5dee30bf22f619b7d83cce7b675c80ee5195644b5c
+  OK         sha256_original              224d858ef70dc4b82bb8638acb5a1c96e2ed53e6b01d883160384df72bfe1a94
+== lab_ventas_20261109.dat (normalizado esperado)
+  OK         registros                    100
+  OK         sha256_esperado              b6f619eadee7a5d31888da5eebd9084f6c30ff2f29cebeb02cecca7c4b41619d
+  OK         sha256_original              176baf9f706206b8d7926bf3933acd3585bee0d5931726ff182dece83d53a8fe
+  OK         suma_cantidad                633
+  OK         suma_importe_total           1207807.85
+  OK         ventas_con_cliente_inexistente 0
+
+Manifiesto verificado: sin diferencias.

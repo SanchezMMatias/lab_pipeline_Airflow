@@ -1,0 +1,16 @@
+# Lo unico que cambia por entorno. Para Azure/Google se duplica este archivo.
+entorno: local
+storage:
+  tipo: local
+  base: /opt/airflow/lab_data
+  zonas:
+    entrada: entrada
+    raw: raw
+    curated: curated
+    rejected: rejected
+conexiones:
+  sql: mssql_lab           # AIRFLOW_CONN_MSSQL_LAB en .env
+  correo: smtp_mailpit     # AIRFLOW_CONN_SMTP_MAILPIT en .env (smtp_lab = Gmail real)
+correo:
+  destinatarios: [equipo-datos@lab.local]   # Mailpit acepta cualquier direccion
+  asunto_prefijo: "[lab-airflow local]"

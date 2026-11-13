@@ -1,0 +1,23 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = 'reproceso-desde-cero_12-extra-importe-3-decimales__20261113T202714'
+--------------------------------------------------------------------------------
+          audit_id: 43
+           archivo: lab_ventas_20261115.dat
+            estado: RECHAZADO
+           lote_id: lab.ventas-20261115-129d753b28c0
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 20:27:25.988000
+           fin_utc: 2026-11-13 20:27:29.187000
+            motivo: [normalizacion] 1 errores de normalizacion; reg 2, importe_total: decimal invalido (sin separador de miles, hasta 2 decimales) (valor: '12,345')
+
+-- lab.audit_error
+audit_id=43 registro=2 columna=importe_total valor='12,345' motivo=decimal invalido (sin separador de miles, hasta 2 decimales)
+
+-- conteos en destino
+lab.clientes: 20 filas en 1 lotes
+lab.ventas: 100 filas en 1 lotes
+LOTES: lab.ventas-20261115-129d753b28c0

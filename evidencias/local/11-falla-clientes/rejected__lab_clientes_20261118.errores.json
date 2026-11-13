@@ -1,0 +1,16 @@
+{
+  "archivo": "lab_clientes_20261118.dat",
+  "lote_id": "lab.clientes-20261118-24c1c7140e54",
+  "etapa": "normalizacion",
+  "estado": "RECHAZADO",
+  "motivo": "1 errores de normalizacion",
+  "cantidad_errores": 1,
+  "errores": [
+    {
+      "registro": 2,
+      "columna": "email",
+      "valor": "sin-arroba.com",
+      "motivo": "email con formato invalido"
+    }
+  ]
+}

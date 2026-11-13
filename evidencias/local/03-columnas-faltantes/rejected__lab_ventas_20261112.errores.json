@@ -1,0 +1,16 @@
+{
+  "archivo": "lab_ventas_20261112.dat",
+  "lote_id": "lab.ventas-20261112-a72620d9fd7d",
+  "etapa": "estructura",
+  "estado": "RECHAZADO",
+  "motivo": "estructura invalida (1 problemas)",
+  "cantidad_errores": 1,
+  "errores": [
+    {
+      "registro": 2,
+      "columna": null,
+      "valor": null,
+      "motivo": "tiene 6 columnas, se esperan 7"
+    }
+  ]
+}

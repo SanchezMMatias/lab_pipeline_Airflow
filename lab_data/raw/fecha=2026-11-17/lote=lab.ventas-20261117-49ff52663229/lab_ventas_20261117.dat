@@ -1,0 +1,4 @@
+venta_id|cliente_id|fecha_venta|cantidad|importe_total|moneda|observacion
+1701|3|2026-11-10|2|1500.00|ARS|
+1702|3|2026-11-10|2|1500.00|USD|
+1703|3|2026-11-10|2|1500.00|ARS|

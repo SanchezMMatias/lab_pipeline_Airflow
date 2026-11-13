@@ -1,0 +1,38 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = '11-falla-clientes__20261113T195450'
+--------------------------------------------------------------------------------
+          audit_id: 15
+           archivo: lab_ventas_20261118.dat
+            estado: BLOQUEADO_DEPENDENCIA
+           lote_id: lab.ventas-20261118-d7006f5d1a07
+     registros_esp: 5
+     registros_obt: None
+ suma_cantidad_esp: 10
+ suma_cantidad_obt: None
+  suma_importe_esp: 7500.00
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 19:54:58.725000
+           fin_utc: 2026-11-13 19:55:14.242000
+            motivo: [dependencias] lab.clientes del 2026-11-18 quedo RECHAZADO; archivo: lab.clientes del 2026-11-18 no quedo CORRECTO (valor: 'RECHAZADO')
+--------------------------------------------------------------------------------
+          audit_id: 16
+           archivo: lab_clientes_20261118.dat
+            estado: RECHAZADO
+           lote_id: lab.clientes-20261118-24c1c7140e54
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 19:54:58.733000
+           fin_utc: 2026-11-13 19:55:02.427000
+            motivo: [normalizacion] 1 errores de normalizacion; reg 2, email: email con formato invalido (valor: 'sin-arroba.com')
+
+-- lab.audit_error
+audit_id=16 registro=2 columna=email valor='sin-arroba.com' motivo=email con formato invalido
+audit_id=15 registro=None columna=None valor='RECHAZADO' motivo=lab.clientes del 2026-11-18 no quedo CORRECTO
+
+-- conteos en destino
+lab.clientes: 20 filas en 1 lotes
+lab.ventas: 100 filas en 1 lotes
+LOTES: lab.clientes-20261118-24c1c7140e54 lab.ventas-20261118-d7006f5d1a07

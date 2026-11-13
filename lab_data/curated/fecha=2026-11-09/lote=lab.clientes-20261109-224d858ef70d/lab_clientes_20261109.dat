@@ -1,0 +1,21 @@
+cliente_id|nombre|email|fecha_alta|pais_codigo|activo
+1|José Pérez|jose.perez@ejemplo.com.ar|2022-01-22|AR|1
+2|María Gómez|maria.gomez@ejemplo.com.ar|2021-07-19|CL|1
+3|Lucía Fernández|lucia.fernandez@ejemplo.com.ar|2020-02-03|CL|0
+4|Martín Rodríguez|martin.rodriguez@ejemplo.com.ar|2022-04-20|CL|1
+5|Sofía López|sofia.lopez@ejemplo.com.ar|2021-10-22|CL|1
+6|Julián Martínez|julian.martinez@ejemplo.com.ar|2023-05-24|AR|1
+7|Valentina Díaz|valentina.diaz@ejemplo.com.ar|2024-06-26|AR|1
+8|"Tomás ""Tomi"" Álvarez"|tomas.alvarez@ejemplo.com.ar|2024-09-13|UY|0
+9|Camila Romero|camila.romero@ejemplo.com.ar|2020-12-21|AR|1
+10|Mateo Sánchez|mateo.sanchez@ejemplo.com.ar|2022-11-03|AR|1
+11|Agustina Torres|agustina.torres@ejemplo.com.ar|2025-02-03|AR|1
+12|Benjamín Ruiz|benjamin.ruiz@ejemplo.com.ar|2023-12-31|UY|1
+13|Florencia Castro|florencia.castro@ejemplo.com.ar|2021-12-31|CL|1
+14|Ignacio Núñez|ignacio.nunez@ejemplo.com.ar|2022-02-09|CL|0
+15|Renata Ortiz|renata.ortiz@ejemplo.com.ar|2020-11-23|AR|1
+16|Facundo Molina|facundo.molina@ejemplo.com.ar|2022-09-02|AR|1
+17|Martina Suárez|martina.suarez@ejemplo.com.ar|2022-09-30|CL|0
+18|Santiago Rojas|santiago.rojas@ejemplo.com.ar|2021-09-12|UY|1
+19|Paula Herrera|paula.herrera@ejemplo.com.ar|2025-01-15|UY|1
+20|Nicolás Peña|nicolas.pena@ejemplo.com.ar|2025-07-06|AR|1

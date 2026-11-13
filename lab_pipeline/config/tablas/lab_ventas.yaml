@@ -1,0 +1,16 @@
+# Contrato de lab.ventas. Unica fuente de verdad sobre columnas, tipos y reglas.
+schema: lab
+tabla: ventas
+version_contrato: 1
+depende_de: [lab.clientes]
+clave_primaria: [venta_id]
+columnas_suma: [cantidad, importe_total]
+columnas:                  # el orden es el del encabezado obligatorio
+  - {nombre: venta_id,      tipo: int,     obligatorio: true, min: 1}
+  - {nombre: cliente_id,    tipo: int,     obligatorio: true, min: 1,
+     referencia: {tabla: lab.clientes, columna: cliente_id}}
+  - {nombre: fecha_venta,   tipo: date,    obligatorio: true}
+  - {nombre: cantidad,      tipo: int,     obligatorio: true, min: 1}
+  - {nombre: importe_total, tipo: decimal, obligatorio: true, precision: 14, escala: 2, min: 0}
+  - {nombre: moneda,        tipo: code,    obligatorio: true, largo: 3, permitidos: [ARS]}
+  - {nombre: observacion,   tipo: text,    obligatorio: false, largo_max: 200}

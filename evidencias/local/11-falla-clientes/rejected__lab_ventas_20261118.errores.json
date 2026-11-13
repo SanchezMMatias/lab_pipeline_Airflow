@@ -1,0 +1,16 @@
+{
+  "archivo": "lab_ventas_20261118.dat",
+  "lote_id": "lab.ventas-20261118-d7006f5d1a07",
+  "etapa": "dependencias",
+  "estado": "BLOQUEADO_DEPENDENCIA",
+  "motivo": "lab.clientes del 2026-11-18 quedo RECHAZADO",
+  "cantidad_errores": 1,
+  "errores": [
+    {
+      "registro": null,
+      "columna": null,
+      "valor": "RECHAZADO",
+      "motivo": "lab.clientes del 2026-11-18 no quedo CORRECTO"
+    }
+  ]
+}

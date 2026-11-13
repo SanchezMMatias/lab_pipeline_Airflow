@@ -1,0 +1,23 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = '13-extra-moneda-usd__20261113T195407'
+--------------------------------------------------------------------------------
+          audit_id: 14
+           archivo: lab_ventas_20261117.dat
+            estado: RECHAZADO
+           lote_id: lab.ventas-20261117-49ff52663229
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 19:54:16.006000
+           fin_utc: 2026-11-13 19:54:19.943000
+            motivo: [normalizacion] 1 errores de normalizacion; reg 2, moneda: valor no permitido (permitidos: ARS) (valor: 'USD')
+
+-- lab.audit_error
+audit_id=14 registro=2 columna=moneda valor='USD' motivo=valor no permitido (permitidos: ARS)
+
+-- conteos en destino
+lab.clientes: 20 filas en 1 lotes
+lab.ventas: 100 filas en 1 lotes
+LOTES: lab.ventas-20261117-49ff52663229

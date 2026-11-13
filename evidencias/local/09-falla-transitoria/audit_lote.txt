@@ -1,0 +1,34 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = '09-falla-transitoria__20261113T200910'
+--------------------------------------------------------------------------------
+          audit_id: 19
+           archivo: lab_ventas_20261119.dat
+            estado: CORRECTO
+           lote_id: lab.ventas-20261119-477332945a2e
+     registros_esp: 30
+     registros_obt: 30
+ suma_cantidad_esp: 90
+ suma_cantidad_obt: 90
+  suma_importe_esp: 6259.65
+  suma_importe_obt: 6259.65
+        inicio_utc: 2026-11-13 20:09:18.114000
+           fin_utc: 2026-11-13 20:12:09.658000
+            motivo: None
+--------------------------------------------------------------------------------
+          audit_id: 20
+           archivo: lab_clientes_20261119.dat
+            estado: YA_PROCESADO
+           lote_id: lab.clientes-20261119-492ccc59751b
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 20:09:18.272000
+           fin_utc: 2026-11-13 20:09:18.272000
+            motivo: mismo archivo (nombre y sha256) ya procesado correctamente
+
+-- conteos en destino
+lab.clientes: 25 filas en 2 lotes
+lab.ventas: 130 filas en 2 lotes
+LOTES: lab.clientes-20261119-492ccc59751b lab.ventas-20261119-477332945a2e

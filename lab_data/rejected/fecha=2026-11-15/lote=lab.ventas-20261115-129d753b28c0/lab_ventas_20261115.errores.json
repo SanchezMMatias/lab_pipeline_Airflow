@@ -1,0 +1,16 @@
+{
+  "archivo": "lab_ventas_20261115.dat",
+  "lote_id": "lab.ventas-20261115-129d753b28c0",
+  "etapa": "normalizacion",
+  "estado": "RECHAZADO",
+  "motivo": "1 errores de normalizacion",
+  "cantidad_errores": 1,
+  "errores": [
+    {
+      "registro": 2,
+      "columna": "importe_total",
+      "valor": "12,345",
+      "motivo": "decimal invalido (sin separador de miles, hasta 2 decimales)"
+    }
+  ]
+}

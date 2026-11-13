@@ -1,0 +1,23 @@
+-- SELECT * FROM lab.audit_lote WHERE dag_run_id = 'reproceso-desde-cero_05-solo-encabezado__20261113T202532'
+--------------------------------------------------------------------------------
+          audit_id: 40
+           archivo: lab_clientes_20261116.dat
+            estado: RECHAZADO
+           lote_id: lab.clientes-20261116-018117fba9af
+     registros_esp: None
+     registros_obt: None
+ suma_cantidad_esp: None
+ suma_cantidad_obt: None
+  suma_importe_esp: None
+  suma_importe_obt: None
+        inicio_utc: 2026-11-13 20:25:40.033000
+           fin_utc: 2026-11-13 20:25:44.156000
+            motivo: [normalizacion] 1 errores de normalizacion; archivo: archivo sin registros (solo encabezado)
+
+-- lab.audit_error
+audit_id=40 registro=None columna=None valor=None motivo=archivo sin registros (solo encabezado)
+
+-- conteos en destino
+lab.clientes: 20 filas en 1 lotes
+lab.ventas: 100 filas en 1 lotes
+LOTES: lab.clientes-20261116-018117fba9af

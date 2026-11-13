@@ -1,0 +1,16 @@
+{
+  "archivo": "lab_ventas_20261109.dat",
+  "lote_id": "lab.ventas-20261109-176baf9f7062",
+  "etapa": "precarga",
+  "estado": "FALLIDO",
+  "motivo": "validacion pre-carga fallida (1 diferencias)",
+  "cantidad_errores": 1,
+  "errores": [
+    {
+      "registro": null,
+      "columna": null,
+      "valor": "esperado={'cantidad': '633', 'importe_total': '1207808.85'} obtenido={'cantidad': '633', 'importe_total': '1207807.85'}",
+      "motivo": "sumatorias del curated distintas al .ctl"
+    }
+  ]
+}

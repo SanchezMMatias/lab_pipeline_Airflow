@@ -1,0 +1,14 @@
+escenario                          run      estados en audit_lote
+01-validos                         success  lab_clientes_20261109.dat=CORRECTO lab_ventas_20261109.dat=CORRECTO 
+02a-fecha-imposible                failed   lab_clientes_20261110.dat=RECHAZADO 
+02b-obligatorio-vacio              failed   lab_clientes_20261111.dat=RECHAZADO 
+03-columnas-faltantes              failed   lab_ventas_20261112.dat=RECHAZADO 
+04a-clave-duplicada                failed   lab_ventas_20261113.dat=RECHAZADO 
+04b-cliente-inexistente            failed   lab_ventas_20261114.dat=RECHAZADO 
+05-solo-encabezado                 failed   lab_clientes_20261116.dat=RECHAZADO 
+07-reejecucion                     success  lab_clientes_20261109.dat=YA_PROCESADO lab_ventas_20261109.dat=YA_PROCESADO 
+08-conflicto                       failed   lab_clientes_20261109.dat=YA_PROCESADO lab_ventas_20261109.dat=CONFLICTO 
+11-falla-clientes                  failed   lab_clientes_20261118.dat=RECHAZADO lab_ventas_20261118.dat=BLOQUEADO_DEPENDENCIA 
+12-extra-importe-3-decimales       failed   lab_ventas_20261115.dat=RECHAZADO 
+13-extra-moneda-usd                failed   lab_ventas_20261117.dat=RECHAZADO 
+19-clientes-nuevos-mismo-dia       success  lab_ventas_20261119.dat=CORRECTO lab_clientes_20261119.dat=CORRECTO 

@@ -1,0 +1,16 @@
+{
+  "archivo": "lab_clientes_20261110.dat",
+  "lote_id": "lab.clientes-20261110-a43c61087ba0",
+  "etapa": "normalizacion",
+  "estado": "RECHAZADO",
+  "motivo": "1 errores de normalizacion",
+  "cantidad_errores": 1,
+  "errores": [
+    {
+      "registro": 2,
+      "columna": "fecha_alta",
+      "valor": "31/02/2026",
+      "motivo": "fecha inexistente"
+    }
+  ]
+}

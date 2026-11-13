@@ -57,3 +57,23 @@ def test_nombre_de_archivo_debe_coincidir(tmp_path):
     p = _escribir(tmp_path, "otro.yaml", BASE.format(suma="[monto]", tipo_monto="decimal"))
     with pytest.raises(ContratoInvalido, match="deberia llamarse"):
         cargar_contrato(p)
+
+
+def test_columna_sin_tipo_falla(tmp_path):
+    texto = BASE.format(suma="[]", tipo_monto="decimal").replace("{nombre: id, tipo: int,", "{nombre: id,")
+    p = _escribir(tmp_path, "lab_prueba.yaml", texto)
+    with pytest.raises(ContratoInvalido, match="columna sin"):
+        cargar_contrato(p)
+
+
+def test_entorno_local_tiene_lo_necesario():
+    import yaml
+
+    from lab_pipeline.contrato import DIR_TABLAS
+
+    ruta = DIR_TABLAS.parent / "entornos" / "local.yaml"
+    env = yaml.safe_load(ruta.read_text(encoding="utf-8"))
+    assert env["storage"]["tipo"] == "local"
+    assert set(env["storage"]["zonas"]) == {"entrada", "raw", "curated", "rejected"}
+    assert env["conexiones"] == {"sql": "mssql_lab", "correo": "smtp_mailpit"}
+    assert env["correo"]["destinatarios"]

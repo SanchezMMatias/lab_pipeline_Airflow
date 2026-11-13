@@ -1,0 +1,22 @@
+dag_id       | logical_date | task_id                       | state           | start_date                       | end_date                        
+=============+==============+===============================+=================+==================================+=================================
+lab_archivos |              | ventas.a_raw                  | upstream_failed | 2026-11-13T19:42:50.118262+00:00 | 2026-11-13T19:42:50.118262+00:00
+lab_archivos |              | ventas.normalizar             | upstream_failed | 2026-11-13T19:42:51.338245+00:00 | 2026-11-13T19:42:51.338245+00:00
+lab_archivos |              | ventas.validar_precarga       | upstream_failed | 2026-11-13T19:42:52.497385+00:00 | 2026-11-13T19:42:52.497385+00:00
+lab_archivos |              | clientes.recibir              | skipped         | 2026-11-13T19:42:47.444828+00:00 | 2026-11-13T19:42:48.574258+00:00
+lab_archivos |              | ventas.cargar_staging         | upstream_failed | 2026-11-13T19:42:53.738165+00:00 | 2026-11-13T19:42:53.738165+00:00
+lab_archivos |              | ventas.validar_staging        | upstream_failed | 2026-11-13T19:42:54.121181+00:00 | 2026-11-13T19:42:54.121181+00:00
+lab_archivos |              | clientes.cargar_staging       | skipped         | 2026-11-13T19:42:55.434193+00:00 | 2026-11-13T19:42:55.434193+00:00
+lab_archivos |              | clientes.validar_staging      | skipped         | 2026-11-13T19:42:56.628714+00:00 | 2026-11-13T19:42:56.628714+00:00
+lab_archivos |              | clientes.publicar             | skipped         | 2026-11-13T19:42:57.891703+00:00 | 2026-11-13T19:42:57.891703+00:00
+lab_archivos |              | clientes.conciliar            | skipped         | 2026-11-13T19:42:59.002627+00:00 | 2026-11-13T19:42:59.002627+00:00
+lab_archivos |              | ventas.publicar               | skipped         | 2026-11-13T19:43:00.535740+00:00 | 2026-11-13T19:43:00.535740+00:00
+lab_archivos |              | ventas.conciliar              | skipped         | 2026-11-13T19:43:01.667317+00:00 | 2026-11-13T19:43:01.667317+00:00
+lab_archivos |              | enviar_resumen                | success         | 2026-11-13T19:43:02.871842+00:00 | 2026-11-13T19:43:03.386660+00:00
+lab_archivos |              | ventas.recibir                | failed          | 2026-11-13T19:42:47.451190+00:00 | 2026-11-13T19:42:49.010446+00:00
+lab_archivos |              | clientes.a_raw                | skipped         | 2026-11-13T19:42:53.732499+00:00 | 2026-11-13T19:42:53.732499+00:00
+lab_archivos |              | clientes.normalizar           | skipped         | 2026-11-13T19:42:54.115169+00:00 | 2026-11-13T19:42:54.115169+00:00
+lab_archivos |              | clientes.validar_precarga     | skipped         | 2026-11-13T19:42:55.250855+00:00 | 2026-11-13T19:42:55.250855+00:00
+lab_archivos |              | ventas.verificar_dependencias | skipped         | 2026-11-13T19:42:59.302288+00:00 | 2026-11-13T19:42:59.630376+00:00
+lab_archivos |              | verificar_estado_final        | failed          | 2026-11-13T19:43:03.974687+00:00 | 2026-11-13T19:43:04.773770+00:00
+                                                                                                                                                   

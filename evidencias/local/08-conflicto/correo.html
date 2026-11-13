@@ -1,0 +1,11 @@
+<html><body style="font-family:sans-serif">
+<h2>lab_archivos &mdash; fecha de negocio 2026-11-09</h2>
+<p>dag_run_id: <code>08-conflicto__20261113T194239</code><br>Resultado: <b>CON ERRORES</b></p>
+<table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;font-size:13px">
+<tr style="background:#eee"><th>Tabla</th><th>Archivo</th><th>Estado</th>
+<th>Reg. esp.</th><th>Reg. obt.</th><th>Dif.</th>
+<th>Cant. esp.</th><th>Cant. obt.</th><th>Dif.</th>
+<th>Importe esp.</th><th>Importe obt.</th><th>Dif.</th><th>Lote</th><th>Motivo</th></tr>
+<tr><td>lab.clientes</td><td>lab_clientes_20261109.dat</td><td style='color:#57606a;font-weight:bold'>YA_PROCESADO</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>lab.clientes-20261109-224d858ef70d</td><td>mismo archivo (nombre y sha256) ya procesado correctamente</td></tr>
+<tr><td>lab.ventas</td><td>lab_ventas_20261109.dat</td><td style='color:#bc4c00;font-weight:bold'>CONFLICTO</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>lab.ventas-20261109-873286e2836d</td><td>mismo nombre que un archivo ya registrado pero con otro sha256: no se toca raw ni SQL</td></tr>
+</table></body></html>

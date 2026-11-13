@@ -1,6 +1,7 @@
 .env
-config/
+/config/
 logs/
 plugins/
 venv/
 .vscode/
+__pycache__/

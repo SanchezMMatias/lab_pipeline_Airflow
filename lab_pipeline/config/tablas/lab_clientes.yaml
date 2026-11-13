@@ -1,0 +1,14 @@
+# Contrato de lab.clientes. Unica fuente de verdad sobre columnas, tipos y reglas.
+schema: lab
+tabla: clientes
+version_contrato: 1
+depende_de: []
+clave_primaria: [cliente_id]
+columnas_suma: []          # clientes se concilia solo por conteo
+columnas:                  # el orden es el del encabezado obligatorio
+  - {nombre: cliente_id,  tipo: int,   obligatorio: true, min: 1}
+  - {nombre: nombre,      tipo: text,  obligatorio: true, largo_max: 100}
+  - {nombre: email,       tipo: email, obligatorio: true, largo_max: 254}
+  - {nombre: fecha_alta,  tipo: date,  obligatorio: true}
+  - {nombre: pais_codigo, tipo: code,  obligatorio: true, largo: 2, permitidos: [AR, CL, UY]}
+  - {nombre: activo,      tipo: bool,  obligatorio: true}

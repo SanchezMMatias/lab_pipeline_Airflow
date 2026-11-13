@@ -1,0 +1,16 @@
+{
+  "archivo": "lab_clientes_20261116.dat",
+  "lote_id": "lab.clientes-20261116-018117fba9af",
+  "etapa": "normalizacion",
+  "estado": "RECHAZADO",
+  "motivo": "1 errores de normalizacion",
+  "cantidad_errores": 1,
+  "errores": [
+    {
+      "registro": null,
+      "columna": null,
+      "valor": null,
+      "motivo": "archivo sin registros (solo encabezado)"
+    }
+  ]
+}
