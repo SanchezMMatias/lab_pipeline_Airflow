@@ -1,0 +1,3 @@
+# Dependencias para correr las pruebas en tu venv local (no en la imagen de Airflow)
+pyyaml
+pytest
