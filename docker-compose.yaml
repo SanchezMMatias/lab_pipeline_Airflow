@@ -138,23 +138,6 @@ services:
       retries: 10
       start_period: 30s
     restart: always
-
-  # --- Laboratorio: crea labdb y el login lab_user (sql/init.sql) una vez que SQL Server esta listo ---
-  sqlserver-init:
-    image: mcr.microsoft.com/mssql/server:2022-latest
-    environment:
-      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD}
-      MSSQL_LAB_PASSWORD: ${MSSQL_LAB_PASSWORD:?Definir MSSQL_LAB_PASSWORD en .env}
-    volumes:
-      - ${AIRFLOW_PROJ_DIR:-.}/sql:/sql:ro
-    entrypoint: ["/bin/bash", "-c"]
-    command:
-      - /opt/mssql-tools18/bin/sqlcmd -C -S sqlserver -U sa -P "$${MSSQL_SA_PASSWORD}" -b -v LAB_PASSWORD="$${MSSQL_LAB_PASSWORD}" -i /sql/init.sql
-    depends_on:
-      sqlserver:
-        condition: service_healthy
-    restart: "no"
-
   # --- Laboratorio: SMTP de prueba. Web en http://localhost:8025, SMTP en mailpit:1025 ---
   mailpit:
     image: axllent/mailpit:latest
